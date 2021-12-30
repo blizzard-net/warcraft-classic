@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Description>The Argent Pony .NET client for the Blizzard World of Warcraft Game Data and Profile APIs</Description>
+    <Title>Argent Pony Warcraft Client</Title>
+    <PackageTags>Warcraft;World-of-Warcraft;WoW;Blizzard</PackageTags>
+    <PackageIcon>ArgentPony.png</PackageIcon>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(CI)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Include="System.Text.Json" />
+    <Using Include="System.Text.Json.Serialization" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.0" PrivateAssets="All" />
+    <PackageReference Include="System.Text.Json" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="docs/ArgentPony.png" Pack="true" PackagePath="\" />
+    <None Include="docs/README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
