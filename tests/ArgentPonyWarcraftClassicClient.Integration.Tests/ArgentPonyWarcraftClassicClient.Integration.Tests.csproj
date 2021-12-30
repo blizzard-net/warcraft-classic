@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Include="ArgentPonyWarcraftClassicClient.Integration.Tests.TestUtilities" />
+    <Using Include="ArgentPonyWarcraftClassicClient.Tests.Assertions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="6.2.0" />
+    <PackageReference Include="FluentAssertions.Json" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ArgentPonyWarcraftClassicClient\ArgentPonyWarcraftClassicClient.csproj" />
+    <ProjectReference Include="..\ArgentPonyWarcraftClassicClient.Tests.Assertions\ArgentPonyWarcraftClassicClient.Tests.Assertions.csproj" />
+  </ItemGroup>
+
+</Project>
