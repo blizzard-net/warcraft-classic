@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blizzard-net.github.io/blog</id>
+    <title>Argent Pony Warcraft Classic Client Blog</title>
+    <updated>2021-12-30T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://blizzard-net.github.io/blog"/>
+    <subtitle>Argent Pony Warcraft Classic Client Blog</subtitle>
+    <icon>https://blizzard-net.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[New Project]]></title>
+        <id>new-project</id>
+        <link href="https://blizzard-net.github.io/warcraft-classic/blog/new-project"/>
+        <updated>2021-12-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Argent Pony Warcraft Client has been around for a while now, but it does not support developers targeting World of Warcraft Classic.]]></summary>
+    </entry>
+</feed>

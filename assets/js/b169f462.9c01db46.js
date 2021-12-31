@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[17],{86:function(a){a.exports=JSON.parse('{"allTagsPath":"/warcraft-classic/blog/tags","slug":"docs","name":"docs","count":1,"permalink":"/warcraft-classic/blog/tags/docs"}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{83:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"New Project","permalink":"/warcraft-classic/blog/new-project"}]}')}}]);
