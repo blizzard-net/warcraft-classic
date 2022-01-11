@@ -127,32 +127,102 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/connected-realm/4372/auctions/?namespace=dynamic-classic-us"
+      "href": "https://us.api.blizzard.com/data/wow/connected-realm/5139/auctions/6?namespace=dynamic-classic1x-us"
     }
+  },
+  "connected_realm": {
+    "href": "https://us.api.blizzard.com/data/wow/connected-realm/5139?namespace=dynamic-classic1x-us"
   },
   "auctions": [
     {
-      "key": {
-        "href": "https://us.api.blizzard.com/data/wow/connected-realm/4372/auctions/2?namespace=dynamic-classic-us"
+      "id": 24149940,
+      "item": {
+        "id": 2865
       },
-      "name": "Alliance Auction House",
-      "id": 2
+      "bid": 2500,
+      "buyout": 2500,
+      "quantity": 1,
+      "time_left": "LONG"
     },
     {
-      "key": {
-        "href": "https://us.api.blizzard.com/data/wow/connected-realm/4372/auctions/6?namespace=dynamic-classic-us"
+      "id": 24149974,
+      "item": {
+        "id": 2866
       },
-      "name": "Horde Auction House",
-      "id": 6
+      "bid": 2000,
+      "buyout": 2000,
+      "quantity": 1,
+      "time_left": "LONG"
     },
     {
-      "key": {
-        "href": "https://us.api.blizzard.com/data/wow/connected-realm/4372/auctions/7?namespace=dynamic-classic-us"
+      "id": 24149978,
+      "item": {
+        "id": 2866
       },
-      "name": "Blackwater Auction House",
-      "id": 7
+      "bid": 2000,
+      "buyout": 2000,
+      "quantity": 1,
+      "time_left": "LONG"
+    },
+    {
+      "id": 24155421,
+      "item": {
+        "id": 8188
+      },
+      "bid": 9621,
+      "buyout": 10000,
+      "quantity": 1,
+      "time_left": "LONG"
+    },
+    {
+      "id": 24155468,
+      "item": {
+        "id": 7431,
+        "rand": 611,
+        "seed": 1972230016
+      },
+      "bid": 5848,
+      "buyout": 6000,
+      "quantity": 1,
+      "time_left": "LONG"
+    },
+    {
+      "id": 24161725,
+      "item": {
+        "id": 727,
+        "rand": 15,
+        "seed": 1208194304
+      },
+      "bid": 366,
+      "buyout": 366,
+      "quantity": 1,
+      "time_left": "LONG"
+    },
+    {
+      "id": 24477842,
+      "item": {
+        "id": 9879,
+        "rand": 767,
+        "seed": 171074432
+      },
+      "bid": 2946,
+      "buyout": 4000,
+      "quantity": 1,
+      "time_left": "LONG"
+    },
+    {
+      "id": 24477950,
+      "item": {
+        "id": 4234
+      },
+      "bid": 6000,
+      "buyout": 10000,
+      "quantity": 20,
+      "time_left": "LONG"
     }
-  ]
+  ],
+  "id": 6,
+  "name": "Horde Auction House"
 }</value>
   </data>
   <data name="ItemResponse" xml:space="preserve">
@@ -5888,6 +5958,38 @@
   },
   "last_updated_timestamp": 1594853730000,
   "price": 1203380000
+}</value>
+  </data>
+  <data name="AuctionIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/connected-realm/4372/auctions/?namespace=dynamic-classic-us"
+    }
+  },
+  "auctions": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/4372/auctions/2?namespace=dynamic-classic-us"
+      },
+      "name": "Alliance Auction House",
+      "id": 2
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/4372/auctions/6?namespace=dynamic-classic-us"
+      },
+      "name": "Horde Auction House",
+      "id": 6
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/4372/auctions/7?namespace=dynamic-classic-us"
+      },
+      "name": "Blackwater Auction House",
+      "id": 7
+    }
+  ]
 }</value>
   </data>
 </root>

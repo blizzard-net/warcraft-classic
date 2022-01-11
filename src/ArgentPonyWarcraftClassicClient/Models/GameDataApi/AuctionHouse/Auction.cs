@@ -23,13 +23,7 @@ public record Auction
     [JsonPropertyName("quantity")]
     public int Quantity { get; init; }
 
-    /// <summary>
-    /// Gets the unit price of the item being auctioned.
-    /// </summary>
-    [JsonPropertyName("unit_price")]
-    public long? UnitPrice { get; init; }
-
-    /// <summary>
+     /// <summary>
     /// Gets the approximate time remaining for the auction (SHORT or VERY_LONG).
     /// </summary>
     [JsonPropertyName("time_left")]
