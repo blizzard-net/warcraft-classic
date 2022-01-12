@@ -21,5 +21,18 @@ public record AuctionsIndex
     /// Gets the auction house references.
     /// </summary>
     [JsonPropertyName("auctions")]
-    public AuctionHouseReference[] Auctions { get; init; }
+    public Auction[] Auctions { get; init; }
+
+    /// <summary>
+    /// Gets the index of the auction house
+    /// </summary>
+    [JsonPropertyName("id")]
+    public int Id { get; init; }
+
+    /// <summary>
+    /// Gets the name of the auction house
+    /// </summary>
+    [JsonPropertyName("name")]
+    public string Name { get; init; }
+
 }
