@@ -7,7 +7,7 @@ public class PlayableClassApiTests
     {
         IPlayableClassApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/playable-class/index?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.PlayableClassesIndexResponse);
+            responseContent: Resources.PlayableClassesIndexResponse_ForBCC);
 
         RequestResult<PlayableClassesIndex> result = await warcraftClient.GetPlayableClassesIndexAsync("static-classic-us");
         Assert.NotNull(result.Value);
@@ -18,7 +18,7 @@ public class PlayableClassApiTests
     {
         IPlayableClassApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.PlayableClassResponse);
+            responseContent: Resources.PlayableClassResponse_ForBCC);
 
         RequestResult<PlayableClass> result = await warcraftClient.GetPlayableClassAsync(7, "static-classic-us");
         Assert.NotNull(result.Value);
@@ -29,7 +29,7 @@ public class PlayableClassApiTests
     {
         IPlayableClassApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/media/playable-class/7?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.PlayableClassMediaResponse);
+            responseContent: Resources.PlayableClassMediaResponse_ForBCC);
 
         RequestResult<PlayableClassMedia> result = await warcraftClient.GetPlayableClassMediaAsync(7, "static-classic-us");
         Assert.NotNull(result.Value);

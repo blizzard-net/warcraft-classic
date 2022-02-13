@@ -7,7 +7,7 @@ public class RegionApiTests
     {
         IRegionApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/region/index?namespace=dynamic-classic-us&locale=en_US",
-            responseContent: Resources.RegionsIndexResponse);
+            responseContent: Resources.RegionsIndexResponse_ForBCC);
 
         RequestResult<RegionsIndex> result = await warcraftClient.GetRegionsIndexAsync("dynamic-classic-us");
         Assert.NotNull(result.Value);
@@ -18,7 +18,7 @@ public class RegionApiTests
     {
         IRegionApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/region/1?namespace=dynamic-classic-us&locale=en_US",
-            responseContent: Resources.RegionResponse);
+            responseContent: Resources.RegionResponse_ForBCC);
 
         RequestResult<RegionData> result = await warcraftClient.GetRegionAsync(1, "dynamic-classic-us");
         Assert.NotNull(result.Value);

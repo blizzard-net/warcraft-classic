@@ -7,7 +7,7 @@ public class CreatureApiTests
     {
         ICreatureApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/creature-family/index?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.CreatureFamiliesIndexResponse);
+            responseContent: Resources.CreatureFamiliesIndexResponse_ForBCC);
 
         RequestResult<CreatureFamiliesIndex> result = await warcraftClient.GetCreatureFamiliesIndexAsync("static-classic-us");
         Assert.NotNull(result.Value);
@@ -18,7 +18,7 @@ public class CreatureApiTests
     {
         ICreatureApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/creature-family/1?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.CreatureFamilyResponse);
+            responseContent: Resources.CreatureFamilyResponse_ForBCC);
 
         RequestResult<CreatureFamily> result = await warcraftClient.GetCreatureFamilyAsync(1, "static-classic-us");
         Assert.NotNull(result.Value);
@@ -29,7 +29,7 @@ public class CreatureApiTests
     {
         ICreatureApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/creature-type/index?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.CreatureTypesIndexResponse);
+            responseContent: Resources.CreatureTypesIndexResponse_ForBCC);
 
         RequestResult<CreatureTypesIndex> result = await warcraftClient.GetCreatureTypesIndexAsync("static-classic-us");
         Assert.NotNull(result.Value);
@@ -40,7 +40,7 @@ public class CreatureApiTests
     {
         ICreatureApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/creature-type/1?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.CreatureTypeResponse);
+            responseContent: Resources.CreatureTypeResponse_ForBCC);
 
         RequestResult<CreatureType> result = await warcraftClient.GetCreatureTypeAsync(1, "static-classic-us");
         Assert.NotNull(result.Value);
@@ -51,7 +51,7 @@ public class CreatureApiTests
     {
         ICreatureApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/creature/42722?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.CreatureResponse);
+            responseContent: Resources.CreatureResponse_ForBCC);
 
         RequestResult<Creature> result = await warcraftClient.GetCreatureAsync(42722, "static-classic-us");
         Assert.NotNull(result.Value);
@@ -62,7 +62,7 @@ public class CreatureApiTests
     {
         ICreatureApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/media/creature-display/30221?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.CreatureDisplayMediaResponse);
+            responseContent: Resources.CreatureDisplayMediaResponse_ForBCC);
 
         RequestResult<CreatureDisplayMedia> result = await warcraftClient.GetCreatureDisplayMediaAsync(30221, "static-classic-us");
         Assert.NotNull(result.Value);
@@ -73,7 +73,7 @@ public class CreatureApiTests
     {
         ICreatureApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/media/creature-family/1?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.CreatureFamilyMediaResponse);
+            responseContent: Resources.CreatureFamilyMediaResponse_ForBCC);
 
         RequestResult<CreatureFamilyMedia> result = await warcraftClient.GetCreatureFamilyMediaAsync(1, "static-classic-us");
         Assert.NotNull(result.Value);

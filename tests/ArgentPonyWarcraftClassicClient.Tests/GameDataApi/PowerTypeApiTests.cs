@@ -7,7 +7,7 @@ public class PowerTypeApiTests
     {
         IPowerTypeApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/power-type/index?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.PowerTypesIndexResponse);
+            responseContent: Resources.PowerTypesIndexResponse_ForBCC);
 
         RequestResult<PowerTypesIndex> result = await warcraftClient.GetPowerTypesIndexAsync("static-classic-us");
         Assert.NotNull(result.Value);
@@ -18,7 +18,7 @@ public class PowerTypeApiTests
     {
         IPowerTypeApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.PowerTypeResponse);
+            responseContent: Resources.PowerTypeResponse_ForBCC);
 
         RequestResult<PowerType> result = await warcraftClient.GetPowerTypeAsync(0, "static-classic-us");
         Assert.NotNull(result.Value);
