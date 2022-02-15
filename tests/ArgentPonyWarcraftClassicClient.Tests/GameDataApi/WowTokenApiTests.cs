@@ -7,7 +7,7 @@ public class WowTokenApiTests
     {
         IWowTokenApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/token/index?namespace=dynamic-us&locale=en_US",
-            responseContent: Resources.WowTokenIndexResponse);
+            responseContent: Resources.WowTokenIndexResponse_ForBCC);
 
         RequestResult<WowTokenIndex> result = await warcraftClient.GetWowTokenIndexAsync("dynamic-us");
         Assert.NotNull(result.Value);

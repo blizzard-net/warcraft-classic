@@ -7,7 +7,7 @@ public class PlayableRaceApiTests
     {
         IPlayableRaceApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/playable-race/index?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.PlayableRacesIndexResponse);
+            responseContent: Resources.PlayableRacesIndexResponse_ForBCC);
 
         RequestResult<PlayableRacesIndex> result = await warcraftClient.GetPlayableRacesIndexAsync("static-classic-us");
         Assert.NotNull(result.Value);
@@ -18,7 +18,7 @@ public class PlayableRaceApiTests
     {
         IPlayableRaceApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.PlayableRaceResponse);
+            responseContent: Resources.PlayableRaceResponse_ForBCC);
 
         RequestResult<PlayableRace> result = await warcraftClient.GetPlayableRaceAsync(2, "static-classic-us");
         Assert.NotNull(result.Value);

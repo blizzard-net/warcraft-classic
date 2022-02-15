@@ -7,7 +7,7 @@ public class PvpSeasonApiTests
     {
         IPvpSeasonApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/pvp-season/index?namespace=dynamic-classic-us&locale=en_US",
-            responseContent: Resources.PvpSeasonsIndexResponse);
+            responseContent: Resources.PvpSeasonsIndexResponse_ForBCC);
 
         RequestResult<PvpSeasonsIndex> result = await warcraftClient.GetPvpSeasonsIndexAsync("dynamic-classic-us");
         Assert.NotNull(result.Value);
@@ -18,7 +18,7 @@ public class PvpSeasonApiTests
     {
         IPvpSeasonApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-classic-us&locale=en_US",
-            responseContent: Resources.PvpSeasonResponse);
+            responseContent: Resources.PvpSeasonResponse_ForBCC);
 
         RequestResult<PvpSeason> result = await warcraftClient.GetPvpSeasonAsync(27, "dynamic-classic-us");
         Assert.NotNull(result.Value);
@@ -29,7 +29,7 @@ public class PvpSeasonApiTests
     {
         IPvpSeasonApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/1/pvp-leaderboard/index?namespace=dynamic-classic-us&locale=en_US",
-            responseContent: Resources.PvpLeaderboardsIndexResponse);
+            responseContent: Resources.PvpLeaderboardsIndexResponse_ForBCC);
 
         RequestResult<PvpLeaderboardsIndex> result = await warcraftClient.GetPvpLeaderboardsIndexAsync(1, 1, "dynamic-classic-us");
         Assert.NotNull(result.Value);
@@ -40,7 +40,7 @@ public class PvpSeasonApiTests
     {
         IPvpSeasonApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/1/pvp-leaderboard/3v3?namespace=dynamic-classic-us&locale=en_US",
-            responseContent: Resources.PvpLeaderboardResponse);
+            responseContent: Resources.PvpLeaderboardResponse_ForBCC);
 
         RequestResult<PvpLeaderboard> result = await warcraftClient.GetPvpLeaderboardAsync(1, 1, "3v3", "dynamic-classic-us");
         Assert.NotNull(result.Value);
@@ -51,7 +51,7 @@ public class PvpSeasonApiTests
     {
         IPvpSeasonApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/1/pvp-reward/index?namespace=dynamic-classic-us&locale=en_US",
-            responseContent: Resources.PvpRewardsIndexResponse);
+            responseContent: Resources.PvpRewardsIndexResponse_ForBCC);
 
         RequestResult<PvpRewardsIndex> result = await warcraftClient.GetPvpRewardsIndexAsync(1, 1, "dynamic-classic-us");
         Assert.NotNull(result.Value);

@@ -88,9 +88,9 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///      &quot;key&quot;: {
         ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/4372/auctions/6?namespace=dy [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string AuctionIndexResponse {
+        internal static string AuctionIndexResponse_ForBCC {
             get {
-                return ResourceManager.GetString("AuctionIndexResponse", resourceCulture);
+                return ResourceManager.GetString("AuctionIndexResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -98,29 +98,84 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/5139/auctions/6?namespace=dynamic-classic1x-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/connected-realm/5265/auctions/?namespace=dynamic-classic1x-eu&quot;
         ///    }
-        ///  },
-        ///  &quot;connected_realm&quot;: {
-        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/5139?namespace=dynamic-classic1x-us&quot;
         ///  },
         ///  &quot;auctions&quot;: [
         ///    {
-        ///      &quot;id&quot;: 24149940,
-        ///      &quot;item&quot;: {
-        ///        &quot;id&quot;: 2865
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/connected-realm/5265/auctions/2?namespace=dynamic-classic1x-eu&quot;
         ///      },
-        ///      &quot;bid&quot;: 2500,
-        ///      &quot;buyout&quot;: 2500,
+        ///      &quot;name&quot;: &quot;Alliance Auction House&quot;,
+        ///      &quot;id&quot;: 2
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/connected-realm/5265/auctions/6?namespac [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string AuctionIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("AuctionIndexResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/4372/auctions/7?namespace=dynamic-classic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;connected_realm&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/4372?namespace=dynamic-classic-us&quot;
+        ///  },
+        ///  &quot;auctions&quot;: [
+        ///    {
+        ///      &quot;id&quot;: 1065253078,
+        ///      &quot;item&quot;: {
+        ///        &quot;id&quot;: 3575
+        ///      },
+        ///      &quot;bid&quot;: 356000,
+        ///      &quot;buyout&quot;: 375507,
+        ///      &quot;quantity&quot;: 20,
+        ///      &quot;time_left&quot;: &quot;LONG&quot;
+        ///    },
+        ///    {
+        ///      &quot;id&quot;: [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string AuctionsResponse_ForBCC {
+            get {
+                return ResourceManager.GetString("AuctionsResponse_ForBCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/connected-realm/5265/auctions/7?namespace=dynamic-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;connected_realm&quot;: {
+        ///    &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/connected-realm/5265?namespace=dynamic-classic1x-eu&quot;
+        ///  },
+        ///  &quot;auctions&quot;: [
+        ///    {
+        ///      &quot;id&quot;: 21367704,
+        ///      &quot;item&quot;: {
+        ///        &quot;id&quot;: 2749
+        ///      },
+        ///      &quot;bid&quot;: 562,
+        ///      &quot;buyout&quot;: 3000,
         ///      &quot;quantity&quot;: 1,
         ///      &quot;time_left&quot;: &quot;LONG&quot;
         ///    },
         ///    {
-        ///      &quot;id&quot;: 24 [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///      &quot;id&quot;: 213 [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string AuctionsResponse {
+        internal static string AuctionsResponse_ForEra {
             get {
-                return ResourceManager.GetString("AuctionsResponse", resourceCulture);
+                return ResourceManager.GetString("AuctionsResponse_ForEra", resourceCulture);
             }
         }
         
@@ -128,31 +183,63 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/4388?namespace=dynamic-classic-us&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 11,
+        ///  &quot;id&quot;: 4388,
         ///  &quot;has_queue&quot;: false,
         ///  &quot;status&quot;: {
         ///    &quot;type&quot;: &quot;UP&quot;,
         ///    &quot;name&quot;: &quot;Up&quot;
         ///  },
         ///  &quot;population&quot;: {
-        ///    &quot;type&quot;: &quot;FULL&quot;,
-        ///    &quot;name&quot;: &quot;Full&quot;
+        ///    &quot;type&quot;: &quot;MEDIUM&quot;,
+        ///    &quot;name&quot;: &quot;Medium&quot;
         ///  },
         ///  &quot;realms&quot;: [
         ///    {
-        ///      &quot;id&quot;: 11,
+        ///      &quot;id&quot;: 4388,
         ///      &quot;region&quot;: {
         ///        &quot;key&quot;: {
-        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/region/1?namespace=dynamic-classic-us&quot;
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/region/41?namespace=dynamic-classic-us&quot;
         ///        },
-        ///        &quot;name&quot;: &quot;Nor [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///        &quot; [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string ConnectedRealmResponse {
+        internal static string ConnectedRealmResponse_ForBCC {
             get {
-                return ResourceManager.GetString("ConnectedRealmResponse", resourceCulture);
+                return ResourceManager.GetString("ConnectedRealmResponse_ForBCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/connected-realm/5265?namespace=dynamic-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 5265,
+        ///  &quot;has_queue&quot;: false,
+        ///  &quot;status&quot;: {
+        ///    &quot;type&quot;: &quot;UP&quot;,
+        ///    &quot;name&quot;: &quot;Up&quot;
+        ///  },
+        ///  &quot;population&quot;: {
+        ///    &quot;type&quot;: &quot;MEDIUM&quot;,
+        ///    &quot;name&quot;: &quot;Medium&quot;
+        ///  },
+        ///  &quot;realms&quot;: [
+        ///    {
+        ///      &quot;id&quot;: 5265,
+        ///      &quot;region&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/region/83?namespace=dynamic-classic1x-eu&quot;
+        ///        },
+        ///      [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string ConnectedRealmResponse_ForEra {
+            get {
+                return ResourceManager.GetString("ConnectedRealmResponse_ForEra", resourceCulture);
             }
         }
         
@@ -165,18 +252,17 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///  },
         ///  &quot;connected_realms&quot;: [
         ///    {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/4?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/4372?namespace=dynamic-classic-us&quot;
         ///    },
         ///    {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/5?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/4373?namespace=dynamic-classic-us&quot;
         ///    },
         ///    {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/7?namespace=dynamic-classic-us&quot;
-        ///  [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/4374?namespace=dynamic-class [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string ConnectedRealmsIndexResponse {
+        internal static string ConnectedRealmsIndexResponse_ForBCC {
             get {
-                return ResourceManager.GetString("ConnectedRealmsIndexResponse", resourceCulture);
+                return ResourceManager.GetString("ConnectedRealmsIndexResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -184,21 +270,44 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/creature-display/30221?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/connected-realm/?namespace=dynamic-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;connected_realms&quot;: [
+        ///    {
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/connected-realm/5214?namespace=dynamic-classic1x-eu&quot;
+        ///    },
+        ///    {
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/connected-realm/5223?namespace=dynamic-classic1x-eu&quot;
+        ///    },
+        ///    {
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/connected-realm/5225?namespace=dynamic [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string ConnectedRealmsIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("ConnectedRealmsIndexResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/creature-display/30?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;assets&quot;: [
         ///    {
         ///      &quot;key&quot;: &quot;zoom&quot;,
-        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/npcs/zoom/creature-display-30221.jpg&quot;
+        ///      &quot;value&quot;: &quot;https://render.worldofwarcraft.com/classic-us/npcs/zoom/creature-display-30.jpg&quot;
         ///    }
         ///  ],
-        ///  &quot;id&quot;: 30221
+        ///  &quot;id&quot;: 30
         ///} ähnelt.
         /// </summary>
-        internal static string CreatureDisplayMediaResponse {
+        internal static string CreatureDisplayMediaResponse_ForBCC {
             get {
-                return ResourceManager.GetString("CreatureDisplayMediaResponse", resourceCulture);
+                return ResourceManager.GetString("CreatureDisplayMediaResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -206,26 +315,46 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/media/creature-display/30?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;zoom&quot;,
+        ///      &quot;value&quot;: &quot;https://render.worldofwarcraft.com/classic1x-eu/npcs/zoom/creature-display-30.jpg&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 30
+        ///} ähnelt.
+        /// </summary>
+        internal static string CreatureDisplayMediaResponse_ForEra {
+            get {
+                return ResourceManager.GetString("CreatureDisplayMediaResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;creature_families&quot;: [
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/1?namespace=static-8.3.0_32861-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/1?namespace=static-2.5.3_41812-classic-us&quot;
         ///      },
         ///      &quot;name&quot;: &quot;Wolf&quot;,
         ///      &quot;id&quot;: 1
         ///    },
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/2?namespace=static-8.3.0_32861-us&quot;
-        ///      },
-        ///      &quot;name&quot;: [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/2?namespace=static-2.5.3_41812-classic-us&quot;        /// [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string CreatureFamiliesIndexResponse {
+        internal static string CreatureFamiliesIndexResponse_ForBCC {
             get {
-                return ResourceManager.GetString("CreatureFamiliesIndexResponse", resourceCulture);
+                return ResourceManager.GetString("CreatureFamiliesIndexResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -233,21 +362,47 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/creature-family/1?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/creature-family/?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;creature_families&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/creature-family/1?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Wolf&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/creature-family/2?namespace=static-1.14.1_40818-class [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string CreatureFamiliesIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("CreatureFamiliesIndexResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/creature-family/1?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;assets&quot;: [
         ///    {
         ///      &quot;key&quot;: &quot;icon&quot;,
-        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/ability_hunter_pet_wolf.jpg&quot;
+        ///      &quot;value&quot;: &quot;https://render.worldofwarcraft.com/classic-us/icons/56/ability_hunter_pet_wolf.jpg&quot;,
+        ///      &quot;file_data_id&quot;: 132203
         ///    }
         ///  ],
         ///  &quot;id&quot;: 1
         ///} ähnelt.
         /// </summary>
-        internal static string CreatureFamilyMediaResponse {
+        internal static string CreatureFamilyMediaResponse_ForBCC {
             get {
-                return ResourceManager.GetString("CreatureFamilyMediaResponse", resourceCulture);
+                return ResourceManager.GetString("CreatureFamilyMediaResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -255,25 +410,45 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/1?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/media/creature-family/1?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render.worldofwarcraft.com/classic1x-eu/icons/56/ability_hunter_pet_wolf.jpg&quot;,
+        ///      &quot;file_data_id&quot;: 132203
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 1
+        ///} ähnelt.
+        /// </summary>
+        internal static string CreatureFamilyMediaResponse_ForEra {
+            get {
+                return ResourceManager.GetString("CreatureFamilyMediaResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/1?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;id&quot;: 1,
         ///  &quot;name&quot;: &quot;Wolf&quot;,
-        ///  &quot;specialization&quot;: {
-        ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/74?namespace=static-8.3.0_32861-us&quot;
-        ///    },
-        ///    &quot;name&quot;: &quot;Ferocity&quot;,
-        ///    &quot;id&quot;: 74
-        ///  },
         ///  &quot;media&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/creature-family/1?namespace=static-8.3.0_3 [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/creature-family/1?namespace=static-2.5.3_41812-classic-us&quot;
+        ///    },
+        ///    &quot;id&quot;: 1
+        ///  }
+        ///} ähnelt.
         /// </summary>
-        internal static string CreatureFamilyResponse {
+        internal static string CreatureFamilyResponse_ForBCC {
             get {
-                return ResourceManager.GetString("CreatureFamilyResponse", resourceCulture);
+                return ResourceManager.GetString("CreatureFamilyResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -281,27 +456,48 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature/42722?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/creature-family/1?namespace=static-1.14.1_40818-classic1x-eu&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 42722,
-        ///  &quot;name&quot;: &quot;Young Mastiff&quot;,
+        ///  &quot;id&quot;: 1,
+        ///  &quot;name&quot;: &quot;Wolf&quot;,
+        ///  &quot;media&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/media/creature-family/1?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    },
+        ///    &quot;id&quot;: 1
+        ///  }
+        ///} ähnelt.
+        /// </summary>
+        internal static string CreatureFamilyResponse_ForEra {
+            get {
+                return ResourceManager.GetString("CreatureFamilyResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature/30?namespace=static-2.5.3_41812-classic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 30,
+        ///  &quot;name&quot;: &quot;Forest Spider&quot;,
         ///  &quot;type&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/1?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/1?namespace=static-2.5.3_41812-classic-us&quot;
         ///    },
         ///    &quot;name&quot;: &quot;Beast&quot;,
         ///    &quot;id&quot;: 1
         ///  },
         ///  &quot;family&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/52?namespace=static-8.3.0_32861-us&quot;
-        ///    },
-        ///  [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/3?namespace=static-2.5.3_41812-class [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string CreatureResponse {
+        internal static string CreatureResponse_ForBCC {
             get {
-                return ResourceManager.GetString("CreatureResponse", resourceCulture);
+                return ResourceManager.GetString("CreatureResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -309,16 +505,42 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/1?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/creature/30?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 30,
+        ///  &quot;name&quot;: &quot;Forest Spider&quot;,
+        ///  &quot;type&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/creature-type/1?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Beast&quot;,
+        ///    &quot;id&quot;: 1
+        ///  },
+        ///  &quot;family&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/creature-family/3?namespace=static-1.14.1_4081 [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string CreatureResponse_ForEra {
+            get {
+                return ResourceManager.GetString("CreatureResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/1?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;id&quot;: 1,
         ///  &quot;name&quot;: &quot;Beast&quot;
         ///} ähnelt.
         /// </summary>
-        internal static string CreatureTypeResponse {
+        internal static string CreatureTypeResponse_ForBCC {
             get {
-                return ResourceManager.GetString("CreatureTypeResponse", resourceCulture);
+                return ResourceManager.GetString("CreatureTypeResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -326,26 +548,42 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/creature-type/1?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1,
+        ///  &quot;name&quot;: &quot;Beast&quot;
+        ///} ähnelt.
+        /// </summary>
+        internal static string CreatureTypeResponse_ForEra {
+            get {
+                return ResourceManager.GetString("CreatureTypeResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;creature_types&quot;: [
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/1?namespace=static-8.3.0_32861-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/1?namespace=static-2.5.3_41812-classic-us&quot;
         ///      },
         ///      &quot;name&quot;: &quot;Beast&quot;,
         ///      &quot;id&quot;: 1
         ///    },
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/2?namespace=static-8.3.0_32861-us&quot;
-        ///      },
-        ///      &quot;name&quot;: &quot;Dragon [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/2?namespace=static-2.5.3_41812-classic-us&quot;
+        ///      } [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string CreatureTypesIndexResponse {
+        internal static string CreatureTypesIndexResponse_ForBCC {
             get {
-                return ResourceManager.GetString("CreatureTypesIndexResponse", resourceCulture);
+                return ResourceManager.GetString("CreatureTypesIndexResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -353,21 +591,46 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/guild-crest/border/0?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/creature-type/?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;creature_types&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/creature-type/1?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Beast&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/creature-type/2?namespace=static-1.14.1_40818-classic1x-eu&quot; [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string CreatureTypesIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("CreatureTypesIndexResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/guild-crest/border/0?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;assets&quot;: [
         ///    {
         ///      &quot;key&quot;: &quot;image&quot;,
-        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/guild/tabards/border_00.png&quot;
+        ///      &quot;value&quot;: &quot;https://render.worldofwarcraft.com/classic-us/guild/tabards/border_00.png&quot;
         ///    }
         ///  ],
         ///  &quot;id&quot;: 0
         ///} ähnelt.
         /// </summary>
-        internal static string GuildCrestBorderMediaResponse {
+        internal static string GuildCrestBorderMediaResponse_ForBCC {
             get {
-                return ResourceManager.GetString("GuildCrestBorderMediaResponse", resourceCulture);
+                return ResourceManager.GetString("GuildCrestBorderMediaResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -375,7 +638,29 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/guild-crest/?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/media/guild-crest/border/0?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;image&quot;,
+        ///      &quot;value&quot;: &quot;https://render.worldofwarcraft.com/classic1x-eu/guild/tabards/border_00.png&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 0
+        ///} ähnelt.
+        /// </summary>
+        internal static string GuildCrestBorderMediaResponse_ForEra {
+            get {
+                return ResourceManager.GetString("GuildCrestBorderMediaResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/guild-crest/?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;emblems&quot;: [
@@ -383,7 +668,7 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///      &quot;id&quot;: 0,
         ///      &quot;media&quot;: {
         ///        &quot;key&quot;: {
-        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/guild-crest/emblem/0?namespace=static-8.3.0_32861-us&quot;
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/guild-crest/emblem/0?namespace=static-2.5.3_41812-classic-us&quot;
         ///        },
         ///        &quot;id&quot;: 0
         ///      }
@@ -392,11 +677,11 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///      &quot;id&quot;: 1,
         ///      &quot;media&quot;: {
         ///        &quot;key&quot;: {
-        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/guild-cr [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wo [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string GuildCrestComponentsIndexResponse {
+        internal static string GuildCrestComponentsIndexResponse_ForBCC {
             get {
-                return ResourceManager.GetString("GuildCrestComponentsIndexResponse", resourceCulture);
+                return ResourceManager.GetString("GuildCrestComponentsIndexResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -404,21 +689,72 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/guild-crest/emblem/0?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/guild-crest/?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;emblems&quot;: [
+        ///    {
+        ///      &quot;id&quot;: 0,
+        ///      &quot;media&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/media/guild-crest/emblem/0?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///        },
+        ///        &quot;id&quot;: 0
+        ///      }
+        ///    },
+        ///    {
+        ///      &quot;id&quot;: 1,
+        ///      &quot;media&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://eu.api.blizzard.com/d [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string GuildCrestComponentsIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("GuildCrestComponentsIndexResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/guild-crest/emblem/0?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;assets&quot;: [
         ///    {
         ///      &quot;key&quot;: &quot;image&quot;,
-        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/guild/tabards/emblem_00.png&quot;
+        ///      &quot;value&quot;: &quot;https://render.worldofwarcraft.com/classic-us/guild/tabards/emblem_00.png&quot;
         ///    }
         ///  ],
         ///  &quot;id&quot;: 0
         ///} ähnelt.
         /// </summary>
-        internal static string GuildCrestEmblemMediaResponse {
+        internal static string GuildCrestEmblemMediaResponse_ForBCC {
             get {
-                return ResourceManager.GetString("GuildCrestEmblemMediaResponse", resourceCulture);
+                return ResourceManager.GetString("GuildCrestEmblemMediaResponse_ForBCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/media/guild-crest/emblem/0?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;image&quot;,
+        ///      &quot;value&quot;: &quot;https://render.worldofwarcraft.com/classic1x-eu/guild/tabards/emblem_00.png&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 0
+        ///} ähnelt.
+        /// </summary>
+        internal static string GuildCrestEmblemMediaResponse_ForEra {
+            get {
+                return ResourceManager.GetString("GuildCrestEmblemMediaResponse_ForEra", resourceCulture);
             }
         }
         
@@ -435,26 +771,26 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;item_classes&quot;: [
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/0?namespace=static-8.3.0_32861-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/0?namespace=static-2.5.3_41812-classic-us&quot;
         ///      },
         ///      &quot;name&quot;: &quot;Consumable&quot;,
         ///      &quot;id&quot;: 0
         ///    },
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/1?namespace=static-8.3.0_32861-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/1?namespace=static-2.5.3_41812-classic-us&quot;
         ///      },
-        ///      &quot;name&quot;: &quot;Container&quot;,        /// [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///    [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string ItemClassesIndexResponse {
+        internal static string ItemClassesIndexResponse_ForBCC {
             get {
-                return ResourceManager.GetString("ItemClassesIndexResponse", resourceCulture);
+                return ResourceManager.GetString("ItemClassesIndexResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -462,7 +798,33 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/0?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/item-class/?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;item_classes&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/item-class/0?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Consumable&quot;,
+        ///      &quot;id&quot;: 0
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/item-class/1?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///     [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string ItemClassesIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("ItemClassesIndexResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/0?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;class_id&quot;: 0,
@@ -470,18 +832,18 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///  &quot;item_subclasses&quot;: [
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace=static-8.3.0_32861-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace=static-2.5.3_41812-classic-us&quot;
         ///      },
-        ///      &quot;name&quot;: &quot;Explosives and Devices&quot;,
+        ///      &quot;name&quot;: &quot;Consumable&quot;,
         ///      &quot;id&quot;: 0
         ///    },
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-clas [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item- [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string ItemClassResponse {
+        internal static string ItemClassResponse_ForBCC {
             get {
-                return ResourceManager.GetString("ItemClassResponse", resourceCulture);
+                return ResourceManager.GetString("ItemClassResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -489,21 +851,48 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/item-class/0?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;class_id&quot;: 0,
+        ///  &quot;name&quot;: &quot;Consumable&quot;,
+        ///  &quot;item_subclasses&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Consumable&quot;,
+        ///      &quot;id&quot;: 0
+        ///    }
+        ///  ]
+        ///} ähnelt.
+        /// </summary>
+        internal static string ItemClassResponse_ForEra {
+            get {
+                return ResourceManager.GetString("ItemClassResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;assets&quot;: [
         ///    {
         ///      &quot;key&quot;: &quot;icon&quot;,
-        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/inv_sword_39.jpg&quot;
+        ///      &quot;value&quot;: &quot;https://render.worldofwarcraft.com/classic-us/icons/56/inv_sword_39.jpg&quot;,
+        ///      &quot;file_data_id&quot;: 135349
         ///    }
         ///  ],
         ///  &quot;id&quot;: 19019
         ///} ähnelt.
         /// </summary>
-        internal static string ItemMediaResponse {
+        internal static string ItemMediaResponse_ForBCC {
             get {
-                return ResourceManager.GetString("ItemMediaResponse", resourceCulture);
+                return ResourceManager.GetString("ItemMediaResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -511,7 +900,30 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/19019?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/media/item/19019?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render.worldofwarcraft.com/classic1x-eu/icons/56/inv_sword_39.jpg&quot;,
+        ///      &quot;file_data_id&quot;: 135349
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 19019
+        ///} ähnelt.
+        /// </summary>
+        internal static string ItemMediaResponse_ForEra {
+            get {
+                return ResourceManager.GetString("ItemMediaResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/19019?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;id&quot;: 19019,
@@ -520,19 +932,19 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///    &quot;type&quot;: &quot;LEGENDARY&quot;,
         ///    &quot;name&quot;: &quot;Legendary&quot;
         ///  },
-        ///  &quot;level&quot;: 58,
+        ///  &quot;level&quot;: 80,
         ///  &quot;required_level&quot;: 60,
         ///  &quot;media&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-2.5.3_41812-classic-us&quot;
         ///    },
         ///    &quot;id&quot;: 19019
         ///  },
-        ///  &quot;item_class&quot;: {        /// [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///   [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string ItemResponse {
+        internal static string ItemResponse_ForBCC {
             get {
-                return ResourceManager.GetString("ItemResponse", resourceCulture);
+                return ResourceManager.GetString("ItemResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -540,18 +952,46 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/item/19019?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 19019,
+        ///  &quot;name&quot;: &quot;Thunderfury, Blessed Blade of the Windseeker&quot;,
+        ///  &quot;quality&quot;: {
+        ///    &quot;type&quot;: &quot;LEGENDARY&quot;,
+        ///    &quot;name&quot;: &quot;Legendary&quot;
+        ///  },
+        ///  &quot;level&quot;: 80,
+        ///  &quot;required_level&quot;: 60,
+        ///  &quot;media&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/media/item/19019?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    },
+        ///    &quot;id&quot;: 19019
+        ///   [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string ItemResponse_ForEra {
+            get {
+                return ResourceManager.GetString("ItemResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;class_id&quot;: 0,
         ///  &quot;subclass_id&quot;: 0,
-        ///  &quot;display_name&quot;: &quot;Explosives and Devices&quot;,
+        ///  &quot;display_name&quot;: &quot;Consumable&quot;,
         ///  &quot;hide_subclass_in_tooltips&quot;: true
         ///} ähnelt.
         /// </summary>
-        internal static string ItemSubclassResponse {
+        internal static string ItemSubclassResponse_ForBCC {
             get {
-                return ResourceManager.GetString("ItemSubclassResponse", resourceCulture);
+                return ResourceManager.GetString("ItemSubclassResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -559,26 +999,44 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;class_id&quot;: 0,
+        ///  &quot;subclass_id&quot;: 0,
+        ///  &quot;display_name&quot;: &quot;Consumable&quot;,
+        ///  &quot;hide_subclass_in_tooltips&quot;: true
+        ///} ähnelt.
+        /// </summary>
+        internal static string ItemSubclassResponse_ForEra {
+            get {
+                return ResourceManager.GetString("ItemSubclassResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;classes&quot;: [
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/1?namespace=static-8.3.0_32861-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/1?namespace=static-2.5.3_41812-classic-us&quot;
         ///      },
         ///      &quot;name&quot;: &quot;Warrior&quot;,
         ///      &quot;id&quot;: 1
         ///    },
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/2?namespace=static-8.3.0_32861-us&quot;
-        ///      },
-        ///      &quot;name&quot;: &quot;Paladin&quot; [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/2?namespace=static-2.5.3_41812-classic-us&quot;
+        ///      },        /// [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string PlayableClassesIndexResponse {
+        internal static string PlayableClassesIndexResponse_ForBCC {
             get {
-                return ResourceManager.GetString("PlayableClassesIndexResponse", resourceCulture);
+                return ResourceManager.GetString("PlayableClassesIndexResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -586,21 +1044,48 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/playable-class/7?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/playable-class/?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;classes&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/playable-class/1?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Warrior&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/playable-class/2?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        /// [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string PlayableClassesIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("PlayableClassesIndexResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/playable-class/7?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;assets&quot;: [
         ///    {
         ///      &quot;key&quot;: &quot;icon&quot;,
-        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/classicon_shaman.jpg&quot;
+        ///      &quot;value&quot;: &quot;https://render.worldofwarcraft.com/classic-us/icons/56/classicon_shaman.jpg&quot;,
+        ///      &quot;file_data_id&quot;: 626006
         ///    }
         ///  ],
         ///  &quot;id&quot;: 7
         ///} ähnelt.
         /// </summary>
-        internal static string PlayableClassMediaResponse {
+        internal static string PlayableClassMediaResponse_ForBCC {
             get {
-                return ResourceManager.GetString("PlayableClassMediaResponse", resourceCulture);
+                return ResourceManager.GetString("PlayableClassMediaResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -608,7 +1093,30 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/media/playable-class/7?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render.worldofwarcraft.com/classic1x-eu/icons/56/classicon_shaman.jpg&quot;,
+        ///      &quot;file_data_id&quot;: 626006
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 7
+        ///} ähnelt.
+        /// </summary>
+        internal static string PlayableClassMediaResponse_ForEra {
+            get {
+                return ResourceManager.GetString("PlayableClassMediaResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;id&quot;: 7,
@@ -619,19 +1127,18 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///  },
         ///  &quot;power_type&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-2.5.3_41812-classic-us&quot;
         ///    },
         ///    &quot;name&quot;: &quot;Mana&quot;,
         ///    &quot;id&quot;: 0
         ///  },
-        ///  &quot;specializations&quot;: [
-        ///    {
-        ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.ap [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///  &quot;media&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.bli [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string PlayableClassResponse {
+        internal static string PlayableClassResponse_ForBCC {
             get {
-                return ResourceManager.GetString("PlayableClassResponse", resourceCulture);
+                return ResourceManager.GetString("PlayableClassResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -639,7 +1146,37 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/playable-class/7?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 7,
+        ///  &quot;name&quot;: &quot;Shaman&quot;,
+        ///  &quot;gender_name&quot;: {
+        ///    &quot;male&quot;: &quot;Shaman&quot;,
+        ///    &quot;female&quot;: &quot;Shaman&quot;
+        ///  },
+        ///  &quot;power_type&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/power-type/0?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Mana&quot;,
+        ///    &quot;id&quot;: 0
+        ///  },
+        ///  &quot;media&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://eu.a [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string PlayableClassResponse_ForEra {
+            get {
+                return ResourceManager.GetString("PlayableClassResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;id&quot;: 2,
@@ -656,9 +1193,9 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///  &quot;is_allied_race&quot;: false
         ///} ähnelt.
         /// </summary>
-        internal static string PlayableRaceResponse {
+        internal static string PlayableRaceResponse_ForBCC {
             get {
-                return ResourceManager.GetString("PlayableRaceResponse", resourceCulture);
+                return ResourceManager.GetString("PlayableRaceResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -666,27 +1203,53 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/playable-race/2?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 2,
+        ///  &quot;name&quot;: &quot;Orc&quot;,
+        ///  &quot;gender_name&quot;: {
+        ///    &quot;male&quot;: &quot;Orc&quot;,
+        ///    &quot;female&quot;: &quot;Orc&quot;
+        ///  },
+        ///  &quot;faction&quot;: {
+        ///    &quot;type&quot;: &quot;HORDE&quot;,
+        ///    &quot;name&quot;: &quot;Horde&quot;
+        ///  },
+        ///  &quot;is_selectable&quot;: true,
+        ///  &quot;is_allied_race&quot;: false
+        ///} ähnelt.
+        /// </summary>
+        internal static string PlayableRaceResponse_ForEra {
+            get {
+                return ResourceManager.GetString("PlayableRaceResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;races&quot;: [
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/1?namespace=static-8.3.0_32861-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/1?namespace=static-2.5.3_41812-classic-us&quot;
         ///      },
         ///      &quot;name&quot;: &quot;Human&quot;,
         ///      &quot;id&quot;: 1
         ///    },
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-8.3.0_32861-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-2.5.3_41812-classic-us&quot;
         ///      },
-        ///      &quot;name&quot;: &quot;Orc&quot;,
-        ///      &quot;i [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///       [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string PlayableRacesIndexResponse {
+        internal static string PlayableRacesIndexResponse_ForBCC {
             get {
-                return ResourceManager.GetString("PlayableRacesIndexResponse", resourceCulture);
+                return ResourceManager.GetString("PlayableRacesIndexResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -694,16 +1257,42 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/playable-race/?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;races&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/playable-race/1?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Human&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/playable-race/2?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///      } [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string PlayableRacesIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("PlayableRacesIndexResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;id&quot;: 0,
         ///  &quot;name&quot;: &quot;Mana&quot;
         ///} ähnelt.
         /// </summary>
-        internal static string PowerTypeResponse {
+        internal static string PowerTypeResponse_ForBCC {
             get {
-                return ResourceManager.GetString("PowerTypeResponse", resourceCulture);
+                return ResourceManager.GetString("PowerTypeResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -711,27 +1300,43 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/power-type/0?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 0,
+        ///  &quot;name&quot;: &quot;Mana&quot;
+        ///} ähnelt.
+        /// </summary>
+        internal static string PowerTypeResponse_ForEra {
+            get {
+                return ResourceManager.GetString("PowerTypeResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/?namespace=static-2.5.3_41812-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;power_types&quot;: [
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-8.3.0_32861-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-2.5.3_41812-classic-us&quot;
         ///      },
         ///      &quot;name&quot;: &quot;Mana&quot;,
         ///      &quot;id&quot;: 0
         ///    },
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/1?namespace=static-8.3.0_32861-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/1?namespace=static-2.5.3_41812-classic-us&quot;
         ///      },
-        ///      &quot;name&quot;: &quot;Rage&quot;,
-        ///      &quot;id&quot;: [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///      &quot;nam [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string PowerTypesIndexResponse {
+        internal static string PowerTypesIndexResponse_ForBCC {
             get {
-                return ResourceManager.GetString("PowerTypesIndexResponse", resourceCulture);
+                return ResourceManager.GetString("PowerTypesIndexResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -739,14 +1344,41 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/3v3?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/power-type/?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;power_types&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/power-type/0?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Mana&quot;,
+        ///      &quot;id&quot;: 0
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/power-type/1?namespace=static-1.14.1_40818-classic1x-eu&quot;
+        ///      },
+        ///  [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string PowerTypesIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("PowerTypesIndexResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/2/pvp-leaderboard/3v3?namespace=dynamic-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;season&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/2?namespace=dynamic-classic-us&quot;
         ///    },
-        ///    &quot;id&quot;: 27
+        ///    &quot;id&quot;: 2
         ///  },
         ///  &quot;name&quot;: &quot;3v3&quot;,
         ///  &quot;bracket&quot;: {
@@ -755,14 +1387,27 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///  },
         ///  &quot;entries&quot;: [
         ///    {
-        ///      &quot;character&quot;: {
-        ///        &quot;name&quot;: &quot;Chunlî&quot;,
-        ///        &quot;id&quot;: 191561142,
-        ///        &quot;realm&quot;: { [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///      &quot;faction&quot;: {
+        ///        &quot;type&quot;: &quot;ALLIANCE&quot;
+        ///      },
+        ///      &quot;rank&quot; [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string PvpLeaderboardResponse {
+        internal static string PvpLeaderboardResponse_ForBCC {
             get {
-                return ResourceManager.GetString("PvpLeaderboardResponse", resourceCulture);
+                return ResourceManager.GetString("PvpLeaderboardResponse_ForBCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;code&quot;: 404,
+        ///  &quot;type&quot;: &quot;BLZWEBAPI00000404&quot;,
+        ///  &quot;detail&quot;: &quot;Not Found&quot;
+        ///} ähnelt.
+        /// </summary>
+        internal static string PvpLeaderboardResponse_ForEra {
+            get {
+                return ResourceManager.GetString("PvpLeaderboardResponse_ForEra", resourceCulture);
             }
         }
         
@@ -770,26 +1415,37 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/2/pvp-leaderboard/?namespace=dynamic-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;season&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/2?namespace=dynamic-classic-us&quot;
         ///    },
-        ///    &quot;id&quot;: 27
+        ///    &quot;id&quot;: 2
         ///  },
         ///  &quot;leaderboards&quot;: [
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/2v2?namespace=dynamic-classic-us&quot;
-        ///      },
-        ///      &quot;name&quot;: &quot;2v2&quot;,
-        ///    [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/2/pvp-leaderboard/2v2?namespace=dynamic-classic-us&quot;
+        /// [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string PvpLeaderboardsIndexResponse {
+        internal static string PvpLeaderboardsIndexResponse_ForBCC {
             get {
-                return ResourceManager.GetString("PvpLeaderboardsIndexResponse", resourceCulture);
+                return ResourceManager.GetString("PvpLeaderboardsIndexResponse_ForBCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;code&quot;: 404,
+        ///  &quot;type&quot;: &quot;BLZWEBAPI00000404&quot;,
+        ///  &quot;detail&quot;: &quot;Not Found&quot;
+        ///} ähnelt.
+        /// </summary>
+        internal static string PvpLeaderboardsIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("PvpLeaderboardsIndexResponse_ForEra", resourceCulture);
             }
         }
         
@@ -797,28 +1453,155 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-reward/?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/?namespace=dynamic-classic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;seasons&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/1?namespace=dynamic-classic-us&quot;
+        ///      },
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/2?namespace=dynamic-classic-us&quot;
+        ///      },
+        ///      &quot;id&quot;: 2
+        ///    },
+        ///    {
+        ///  [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string PvpRegionalSeasonIndexResponse_ForBCC {
+            get {
+                return ResourceManager.GetString("PvpRegionalSeasonIndexResponse_ForBCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;code&quot;: 404,
+        ///  &quot;type&quot;: &quot;BLZWEBAPI00000404&quot;,
+        ///  &quot;detail&quot;: &quot;Not Found&quot;
+        ///} ähnelt.
+        /// </summary>
+        internal static string PvpRegionalSeasonIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("PvpRegionalSeasonIndexResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/2?namespace=dynamic-classic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 2,
+        ///  &quot;leaderboards&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/2/pvp-leaderboard/?namespace=dynamic-classic-us&quot;
+        ///  },
+        ///  &quot;rewards&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/2/pvp-reward/?namespace=dynamic-classic-us&quot;
+        ///  },
+        ///  &quot;season_start_timestamp&quot;: 1631631600000,
+        ///  &quot;season [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string PvpRegionalSeasonResponse_ForBCC {
+            get {
+                return ResourceManager.GetString("PvpRegionalSeasonResponse_ForBCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;code&quot;: 404,
+        ///  &quot;type&quot;: &quot;BLZWEBAPI00000404&quot;,
+        ///  &quot;detail&quot;: &quot;Not Found&quot;
+        ///} ähnelt.
+        /// </summary>
+        internal static string PvpRegionalSeasonResponse_ForEra {
+            get {
+                return ResourceManager.GetString("PvpRegionalSeasonResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/?namespace=dynamic-classic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;pvp_regions&quot;: [
+        ///    {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/?namespace=dynamic-classic-us&quot;
+        ///    },
+        ///    {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/2/pvp-season/?namespace=dynamic-classic-us&quot;
+        ///    }
+        ///  ]
+        ///} ähnelt.
+        /// </summary>
+        internal static string PvpRegionIndexResponse_ForBCC {
+            get {
+                return ResourceManager.GetString("PvpRegionIndexResponse_ForBCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;code&quot;: 404,
+        ///  &quot;type&quot;: &quot;BLZWEBAPI00000404&quot;,
+        ///  &quot;detail&quot;: &quot;Not Found&quot;
+        ///} ähnelt.
+        /// </summary>
+        internal static string PvpRegionIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("PvpRegionIndexResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/2/pvp-reward/?namespace=dynamic-classic-us&quot;
         ///    }
         ///  },
         ///  &quot;season&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/2?namespace=dynamic-classic-us&quot;
         ///    },
-        ///    &quot;id&quot;: 27
+        ///    &quot;id&quot;: 2
         ///  },
         ///  &quot;rewards&quot;: [
         ///    {
         ///      &quot;bracket&quot;: {
-        ///        &quot;id&quot;: 3,
-        ///        &quot;type&quot;: &quot;BATTLEGROUNDS&quot;
+        ///        &quot;id&quot;: 0,
+        ///        &quot;type&quot;: &quot;ARENA_2v2&quot;
         ///      },
         ///      &quot;achievement&quot;: {
-        ///        &quot;key&quot;: {
-        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/a [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///        &quot;name&quot;: &quot;Merciless Gladiator&quot;,
+        ///        &quot;id&quot;: 41 [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string PvpRewardsIndexResponse {
+        internal static string PvpRewardsIndexResponse_ForBCC {
             get {
-                return ResourceManager.GetString("PvpRewardsIndexResponse", resourceCulture);
+                return ResourceManager.GetString("PvpRewardsIndexResponse_ForBCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;code&quot;: 404,
+        ///  &quot;type&quot;: &quot;BLZWEBAPI00000404&quot;,
+        ///  &quot;detail&quot;: &quot;Not Found&quot;
+        ///} ähnelt.
+        /// </summary>
+        internal static string PvpRewardsIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("PvpRewardsIndexResponse_ForEra", resourceCulture);
             }
         }
         
@@ -826,23 +1609,38 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/2?namespace=dynamic-classic-us&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 27,
-        ///  &quot;leaderboards&quot;: {
-        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/?namespace=dynamic-classic-us&quot;
-        ///  },
-        ///  &quot;rewards&quot;: {
-        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-reward/?namespace=dynamic-classic-us&quot;
-        ///  },
-        ///  &quot;season_start_timestamp&quot;: 1548169200000,
-        ///  &quot;season_end_timestamp&quot;: 1561471200000
+        ///  &quot;id&quot;: 2,
+        ///  &quot;season_start_timestamp&quot;: 1631631600000,
+        ///  &quot;season_end_timestamp&quot;: 1641880800000,
+        ///  &quot;pvp_regions&quot;: [
+        ///    {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/1/pvp-season/2?namespace=dynamic-classic-us&quot;
+        ///    },
+        ///    {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-region/2/pvp-season/2?namespace=dynamic-classic-us&quot;
+        ///    }
+        ///  ]
+        /// [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string PvpSeasonResponse_ForBCC {
+            get {
+                return ResourceManager.GetString("PvpSeasonResponse_ForBCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;code&quot;: 404,
+        ///  &quot;type&quot;: &quot;BLZWEBAPI00000404&quot;,
+        ///  &quot;detail&quot;: &quot;Not Found&quot;
         ///} ähnelt.
         /// </summary>
-        internal static string PvpSeasonResponse {
+        internal static string PvpSeasonResponse_ForEra {
             get {
-                return ResourceManager.GetString("PvpSeasonResponse", resourceCulture);
+                return ResourceManager.GetString("PvpSeasonResponse_ForEra", resourceCulture);
             }
         }
         
@@ -856,156 +1654,36 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///  &quot;seasons&quot;: [
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/22?namespace=dynamic-classic-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/1?namespace=dynamic-classic-us&quot;
         ///      },
-        ///      &quot;id&quot;: 22
-        ///    },
-        ///    {
-        ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/23?namespace=dynamic-classic-us&quot;
-        ///      },
-        ///      &quot;id&quot;: 23
-        ///    },
-        ///    {
-        ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;htt [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
-        /// </summary>
-        internal static string PvpSeasonsIndexResponse {
-            get {
-                return ResourceManager.GetString("PvpSeasonsIndexResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die {
-        ///  &quot;_links&quot;: {
-        ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-talent/11?namespace=static-9.0.2_36532-us&quot;
-        ///    }
-        ///  },
-        ///  &quot;id&quot;: 11,
-        ///  &quot;spell&quot;: {
-        ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/spell/199954?namespace=static-9.0.2_36532-us&quot;
-        ///    },
-        ///    &quot;name&quot;: &quot;Bane of Fragility&quot;,
-        ///    &quot;id&quot;: 199954
-        ///  },
-        ///  &quot;playable_specialization&quot;: {
-        ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/265?namespace=static-9.0.2_36532-us&quot;
-        /// [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
-        /// </summary>
-        internal static string PvpTalentResponse {
-            get {
-                return ResourceManager.GetString("PvpTalentResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die {
-        ///  &quot;_links&quot;: {
-        ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-talent/?namespace=static-8.3.0_32861-us&quot;
-        ///    }
-        ///  },
-        ///  &quot;pvp_talents&quot;: [
-        ///    {
-        ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-talent/3?namespace=static-8.3.0_32861-us&quot;
-        ///      },
-        ///      &quot;name&quot;: &quot;Gladiator&apos;s Medallion&quot;,
-        ///      &quot;id&quot;: 3
-        ///    },
-        ///    {
-        ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-talent/4?namespace=static-8.3.0_32861-us&quot;
-        ///      },
-        ///      &quot;name&quot;: &quot;Ad [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
-        /// </summary>
-        internal static string PvpTalentsIndexResponse {
-            get {
-                return ResourceManager.GetString("PvpTalentsIndexResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die {
-        ///  &quot;_links&quot;: {
-        ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/pvp-tier/1?namespace=static-8.3.0_32861-us&quot;
-        ///    }
-        ///  },
-        ///  &quot;assets&quot;: [
-        ///    {
-        ///      &quot;key&quot;: &quot;icon&quot;,
-        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/ui_rankedpvp_01.jpg&quot;
-        ///    }
-        ///  ],
-        ///  &quot;id&quot;: 1
-        ///} ähnelt.
-        /// </summary>
-        internal static string PvpTierMediaResponse {
-            get {
-                return ResourceManager.GetString("PvpTierMediaResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die {
-        ///  &quot;_links&quot;: {
-        ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-tier/1?namespace=static-8.3.0_32861-us&quot;
-        ///    }
-        ///  },
-        ///  &quot;id&quot;: 1,
-        ///  &quot;name&quot;: &quot;Unranked&quot;,
-        ///  &quot;min_rating&quot;: 0,
-        ///  &quot;max_rating&quot;: 1400,
-        ///  &quot;media&quot;: {
-        ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/pvp-tier/1?namespace=static-8.3.0_32861-us&quot;
-        ///    },
-        ///    &quot;id&quot;: 1
-        ///  },
-        ///  &quot;bracket&quot;: {
-        ///    &quot;id&quot;: 0,
-        ///    &quot;type&quot;: &quot;ARENA_2v2&quot;
-        ///  },
-        ///  &quot;rating_type&quot;: 0
-        ///} ähnelt.
-        /// </summary>
-        internal static string PvpTierResponse {
-            get {
-                return ResourceManager.GetString("PvpTierResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die {
-        ///  &quot;_links&quot;: {
-        ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-tier/?namespace=static-8.3.0_32861-us&quot;
-        ///    }
-        ///  },
-        ///  &quot;tiers&quot;: [
-        ///    {
-        ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-tier/1?namespace=static-8.3.0_32861-us&quot;
-        ///      },
-        ///      &quot;name&quot;: &quot;Unranked&quot;,
         ///      &quot;id&quot;: 1
         ///    },
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-tier/2?namespace=static-8.3.0_32861-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/2?namespace=dynamic-classic-us&quot;
         ///      },
-        ///      &quot;name&quot;: &quot;Combatant&quot;,
-        ///      &quot;id&quot;: 2        /// [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///      &quot;id&quot;: 2
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https:/ [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string PvpTiersIndexResponse {
+        internal static string PvpSeasonsIndexResponse_ForBCC {
             get {
-                return ResourceManager.GetString("PvpTiersIndexResponse", resourceCulture);
+                return ResourceManager.GetString("PvpSeasonsIndexResponse_ForBCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;code&quot;: 404,
+        ///  &quot;type&quot;: &quot;BLZWEBAPI00000404&quot;,
+        ///  &quot;detail&quot;: &quot;Not Found&quot;
+        ///} ähnelt.
+        /// </summary>
+        internal static string PvpSeasonsIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("PvpSeasonsIndexResponse_ForEra", resourceCulture);
             }
         }
         
@@ -1019,21 +1697,22 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///  &quot;realms&quot;: [
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/1?namespace=dynamic-classic-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/4372?namespace=dynamic-classic-us&quot;
         ///      },
-        ///      &quot;name&quot;: &quot;Lightbringer&quot;,
-        ///      &quot;id&quot;: 1,
-        ///      &quot;slug&quot;: &quot;lightbringer&quot;
+        ///      &quot;name&quot;: &quot;Atiesh&quot;,
+        ///      &quot;id&quot;: 4372,
+        ///      &quot;slug&quot;: &quot;atiesh&quot;
         ///    },
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/2?namespace=dynamic-classic-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/4373?namespace=dynamic-classic-us&quot;
         ///      },
-        ///      &quot;name&quot;: &quot;Cenarius&quot; [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///      &quot;name&quot;: &quot;Myzrael&quot;,
+        ///  [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string RealmIndexResponse {
+        internal static string RealmIndexResponse_ForBCC {
             get {
-                return ResourceManager.GetString("RealmIndexResponse", resourceCulture);
+                return ResourceManager.GetString("RealmIndexResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -1041,26 +1720,54 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/tichondrius?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/realm/?namespace=dynamic-classic1x-eu&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 11,
+        ///  &quot;realms&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/realm/5198?namespace=dynamic-classic1x-eu&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;EU4 CWOW GMSS 2&quot;,
+        ///      &quot;id&quot;: 5198,
+        ///      &quot;slug&quot;: &quot;eu4-cwow-gmss-2&quot;
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/realm/5199?namespace=dynamic-classic1x-eu&quot;
+        ///      },
+        ///    [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string RealmIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("RealmIndexResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/westfall?namespace=dynamic-classic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 4388,
         ///  &quot;region&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/region/1?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/region/41?namespace=dynamic-classic-us&quot;
         ///    },
-        ///    &quot;name&quot;: &quot;North America&quot;,
-        ///    &quot;id&quot;: 1
+        ///    &quot;name&quot;: &quot;Classic North America&quot;,
+        ///    &quot;id&quot;: 41
         ///  },
         ///  &quot;connected_realm&quot;: {
-        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-classic-us&quot;
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/4388?namespace=dynamic-classic-us&quot;
         ///  },
-        ///  &quot;name&quot;: &quot;Tichondrius&quot;,
-        ///  &quot;category&quot;: &quot;Uni [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///  &quot;name&quot;: &quot;Westfall&quot;,
+        ///  &quot;categor [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
-        internal static string RealmResponse {
+        internal static string RealmResponse_ForBCC {
             get {
-                return ResourceManager.GetString("RealmResponse", resourceCulture);
+                return ResourceManager.GetString("RealmResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -1068,17 +1775,62 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/region/1?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/realm/ironfoe?namespace=dynamic-classic1x-eu&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 1,
-        ///  &quot;name&quot;: &quot;North America&quot;,
+        ///  &quot;id&quot;: 5265,
+        ///  &quot;region&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/region/83?namespace=dynamic-classic1x-eu&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Classic Era Europe&quot;,
+        ///    &quot;id&quot;: 83
+        ///  },
+        ///  &quot;connected_realm&quot;: {
+        ///    &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/connected-realm/5265?namespace=dynamic-classic1x-eu&quot;
+        ///  },
+        ///  &quot;name&quot;: &quot;Ironfoe&quot;,
+        ///  &quot;catego [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string RealmResponse_ForEra {
+            get {
+                return ResourceManager.GetString("RealmResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/region/41?namespace=dynamic-classic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 41,
+        ///  &quot;name&quot;: &quot;Classic North America&quot;,
         ///  &quot;tag&quot;: &quot;US&quot;
         ///} ähnelt.
         /// </summary>
-        internal static string RegionResponse {
+        internal static string RegionResponse_ForBCC {
             get {
-                return ResourceManager.GetString("RegionResponse", resourceCulture);
+                return ResourceManager.GetString("RegionResponse_ForBCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/region/83?namespace=dynamic-classic1x-eu&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 83,
+        ///  &quot;name&quot;: &quot;Classic Era Europe&quot;,
+        ///  &quot;tag&quot;: &quot;EU&quot;
+        ///} ähnelt.
+        /// </summary>
+        internal static string RegionResponse_ForEra {
+            get {
+                return ResourceManager.GetString("RegionResponse_ForEra", resourceCulture);
             }
         }
         
@@ -1091,14 +1843,14 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///  },
         ///  &quot;regions&quot;: [
         ///    {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/region/1?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/region/41?namespace=dynamic-classic-us&quot;
         ///    }
         ///  ]
         ///} ähnelt.
         /// </summary>
-        internal static string RegionsIndexResponse {
+        internal static string RegionsIndexResponse_ForBCC {
             get {
-                return ResourceManager.GetString("RegionsIndexResponse", resourceCulture);
+                return ResourceManager.GetString("RegionsIndexResponse_ForBCC", resourceCulture);
             }
         }
         
@@ -1106,16 +1858,49 @@ namespace ArgentPonyWarcraftClassicClient.Tests.Properties {
         ///   Sucht eine lokalisierte Zeichenfolge, die {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/token/?namespace=dynamic-classic-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/region/?namespace=dynamic-classic1x-eu&quot;
         ///    }
         ///  },
-        ///  &quot;last_updated_timestamp&quot;: 1594853730000,
-        ///  &quot;price&quot;: 1203380000
+        ///  &quot;regions&quot;: [
+        ///    {
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/region/83?namespace=dynamic-classic1x-eu&quot;
+        ///    }
+        ///  ]
         ///} ähnelt.
         /// </summary>
-        internal static string WowTokenIndexResponse {
+        internal static string RegionsIndexResponse_ForEra {
             get {
-                return ResourceManager.GetString("WowTokenIndexResponse", resourceCulture);
+                return ResourceManager.GetString("RegionsIndexResponse_ForEra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://gateway.battlenet.com.cn/data/wow/token/?namespace=dynamic-classic-cn&quot;
+        ///    }
+        ///  },
+        ///  &quot;last_updated_timestamp&quot;: 1644164675000,
+        ///  &quot;price&quot;: 19530000
+        ///} ähnelt.
+        /// </summary>
+        internal static string WowTokenIndexResponse_ForBCC {
+            get {
+                return ResourceManager.GetString("WowTokenIndexResponse_ForBCC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {
+        ///  &quot;code&quot;: 404,
+        ///  &quot;type&quot;: &quot;BLZWEBAPI00000404&quot;,
+        ///  &quot;detail&quot;: &quot;Not Found&quot;
+        ///} ähnelt.
+        /// </summary>
+        internal static string WowTokenIndexResponse_ForEra {
+            get {
+                return ResourceManager.GetString("WowTokenIndexResponse_ForEra", resourceCulture);
             }
         }
     }

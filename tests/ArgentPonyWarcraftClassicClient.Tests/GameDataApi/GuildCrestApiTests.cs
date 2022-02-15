@@ -7,7 +7,7 @@ public class GuildCrestApiTests
     {
         IGuildCrestApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/guild-crest/index?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.GuildCrestComponentsIndexResponse);
+            responseContent: Resources.GuildCrestComponentsIndexResponse_ForBCC);
 
         RequestResult<GuildCrestComponentsIndex> result = await warcraftClient.GetGuildCrestComponentsIndexAsync("static-classic-us");
         Assert.NotNull(result.Value);
@@ -18,7 +18,7 @@ public class GuildCrestApiTests
     {
         IGuildCrestApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/media/guild-crest/border/0?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.GuildCrestBorderMediaResponse);
+            responseContent: Resources.GuildCrestBorderMediaResponse_ForBCC);
 
         RequestResult<GuildCrestBorderMedia> result = await warcraftClient.GetGuildCrestBorderMediaAsync(0, "static-classic-us");
         Assert.NotNull(result.Value);
@@ -29,7 +29,7 @@ public class GuildCrestApiTests
     {
         IGuildCrestApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/media/guild-crest/emblem/0?namespace=static-classic-us&locale=en_US",
-            responseContent: Resources.GuildCrestEmblemMediaResponse);
+            responseContent: Resources.GuildCrestEmblemMediaResponse_ForBCC);
 
         RequestResult<GuildCrestEmblemMedia> result = await warcraftClient.GetGuildCrestEmblemMediaAsync(0, "static-classic-us");
         Assert.NotNull(result.Value);

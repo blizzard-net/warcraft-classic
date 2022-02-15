@@ -7,7 +7,7 @@ public class RealmApiTests
     {
         IRealmApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/realm/index?namespace=dynamic-classic-us&locale=en_US",
-            responseContent: Resources.RealmIndexResponse);
+            responseContent: Resources.RealmIndexResponse_ForBCC);
 
         RequestResult<RealmsIndex> result = await warcraftClient.GetRealmsIndexAsync("dynamic-classic-us");
         Assert.NotNull(result.Value);
@@ -18,7 +18,7 @@ public class RealmApiTests
     {
         IRealmApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: "https://us.api.blizzard.com/data/wow/realm/tichondrius?namespace=dynamic-classic-us&locale=en_US",
-            responseContent: Resources.RealmResponse);
+            responseContent: Resources.RealmResponse_ForBCC);
 
         RequestResult<Realm> result = await warcraftClient.GetRealmAsync("tichondrius", "dynamic-classic-us");
         Assert.NotNull(result.Value);

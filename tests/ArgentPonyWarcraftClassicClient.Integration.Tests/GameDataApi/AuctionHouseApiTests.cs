@@ -19,8 +19,8 @@ public class AuctionHouseApiTests
     [ResilientFact]
     public async Task GetAuctionsAsync_Gets_Auctions_ForBCC()
     {
-        int realmId = 4386; // this must be a low pop server, otherwise this test could run very long
-        int auctionHouseId = 2;
+        int realmId = 4372; 
+        int auctionHouseId = 7;
         string @namespace = "dynamic-classic-us";
 
         IAuctionHouseApi warcraftClient = ClientFactory.BuildClient();
@@ -34,29 +34,36 @@ public class AuctionHouseApiTests
     [ResilientFact]
     public async Task GetAuctionHousesAsync_Gets_AuctionHouseIndex_ForEra()
     {
-        int realmId = 5121;
-        string @namespace = "dynamic-classic1x-us";
+        int realmId = 5265;
+        string @namespace = "dynamic-classic1x-eu";
+        Region region = Region.Europe;
+        Locale locale = Locale.en_US;
+        string host = "eu.api.blizzard.com";
 
         IAuctionHouseApi warcraftClient = ClientFactory.BuildClient();
 
-        RequestResult<AuctionHouseIndex> result = await warcraftClient.GetAuctionHousesAsync(realmId, @namespace);
+        RequestResult<AuctionHouseIndex> result = await warcraftClient.GetAuctionHousesAsync(realmId, @namespace, region, locale);
 
         await result.Should().BeSuccessfulRequest().BeEquivalentToBlizzardResponseAsync(
-            $"https://us.api.blizzard.com/data/wow/connected-realm/{realmId}/auctions/index?namespace={@namespace}&locale=en_US");
+            $"https://{host}/data/wow/connected-realm/{realmId}/auctions/index?namespace={@namespace}&locale=en_US");
     }
 
     [ResilientFact]
     public async Task GetAuctionsAsync_Gets_Auctions_ForEra()
     {
-        int realmId = 5139; // this must be a low pop server, otherwise this test could run very long
-        int auctionHouseId = 6;
-        string @namespace = "dynamic-classic1x-us";
+        int realmId = 5265; 
+        int auctionHouseId = 7;
+        string @namespace = "dynamic-classic1x-eu";
+        Region region = Region.Europe;
+        Locale locale = Locale.en_US;
+        string host = "eu.api.blizzard.com";
+
 
         IAuctionHouseApi warcraftClient = ClientFactory.BuildClient();
 
-        RequestResult<AuctionsIndex> result = await warcraftClient.GetAuctionsAsync(auctionHouseId, realmId, @namespace);
+        RequestResult<AuctionsIndex> result = await warcraftClient.GetAuctionsAsync(auctionHouseId, realmId, @namespace, region, locale);
 
         await result.Should().BeSuccessfulRequest().BeEquivalentToBlizzardResponseAsync(
-            $"https://us.api.blizzard.com/data/wow/connected-realm/{realmId}/auctions/{auctionHouseId}?namespace={@namespace}&locale=en_US");
+            $"https://{host}/data/wow/connected-realm/{realmId}/auctions/{auctionHouseId}?namespace={@namespace}&locale=en_US");
     }
 }
