@@ -22,4 +22,11 @@ public record Weapon
     /// </summary>
     [JsonPropertyName("dps")]
     public DescribedValue Dps { get; init; }
+
+    /// <summary>
+    /// Gets the additional damage of the weapon
+    /// </summary>
+    [JsonPropertyName("additional_damage")]
+    public Damage[] AdditionalDamage { get; init; }
+
 }
