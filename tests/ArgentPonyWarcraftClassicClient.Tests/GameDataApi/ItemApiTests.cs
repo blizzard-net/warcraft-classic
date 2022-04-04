@@ -66,7 +66,7 @@ public class ItemApiTests
     {
         IItemApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: $"https://us.api.blizzard.com/data/wow/item-class/index?namespace={namespaceEra}&locale=en_US",
-            responseContent: Resources.ItemClassesIndexResponse_ForBCC);
+            responseContent: Resources.ItemClassesIndexResponse_ForEra);
 
         RequestResult<ItemClassesIndex> result = await warcraftClient.GetItemClassesIndexAsync(namespaceEra);
         Assert.NotNull(result.Value);
@@ -77,7 +77,7 @@ public class ItemApiTests
     {
         IItemApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: $"https://us.api.blizzard.com/data/wow/item-class/0?namespace={namespaceEra}&locale=en_US",
-            responseContent: Resources.ItemClassResponse_ForBCC);
+            responseContent: Resources.ItemClassResponse_ForEra);
 
         RequestResult<ItemClass> result = await warcraftClient.GetItemClassAsync(0, namespaceEra);
         Assert.NotNull(result.Value);
@@ -88,7 +88,7 @@ public class ItemApiTests
     {
         IItemApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: $"https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace={namespaceEra}&locale=en_US",
-            responseContent: Resources.ItemSubclassResponse_ForBCC);
+            responseContent: Resources.ItemSubclassResponse_ForEra);
 
         RequestResult<ItemSubclass> result = await warcraftClient.GetItemSubclassAsync(0, 0, namespaceEra);
         Assert.NotNull(result.Value);
@@ -99,7 +99,7 @@ public class ItemApiTests
     {
         IItemApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: $"https://us.api.blizzard.com/data/wow/item/19019?namespace={namespaceEra}&locale=en_US",
-            responseContent: Resources.ItemResponse_ForBCC);
+            responseContent: Resources.ItemResponse_ForEra);
 
         RequestResult<Item> result = await warcraftClient.GetItemAsync(19019, namespaceEra);
         Assert.NotNull(result.Value);
@@ -110,7 +110,7 @@ public class ItemApiTests
     {
         IItemApi warcraftClient = ClientFactory.BuildMockClient(
             requestUri: $"https://us.api.blizzard.com/data/wow/media/item/19019?namespace={namespaceEra}&locale=en_US",
-            responseContent: Resources.ItemMediaResponse_ForBCC);
+            responseContent: Resources.ItemMediaResponse_ForEra);
 
         RequestResult<ItemMedia> result = await warcraftClient.GetItemMediaAsync(19019, namespaceEra);
         Assert.NotNull(result.Value);
